@@ -139,7 +139,7 @@ class CMsgSOCacheSubscribedSerializer:
 		if "attributes" in item_data:
 			for i in range( 0, len( item_data["attributes"] ) ):
 				if i >= EEconConstants.MAX_ATTRIBUTES_PER_ITEM:
-					print( f"Item {item_data["def_index"]} has more than {EEconConstants.MAX_ATTRIBUTES_PER_ITEM} attributes!" )
+					print( f"Item {item_data['def_index']} has more than {EEconConstants.MAX_ATTRIBUTES_PER_ITEM} attributes!" )
 					continue
 
 				attribute = item_data["attributes"][i]
